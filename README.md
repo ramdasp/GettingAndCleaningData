@@ -35,25 +35,25 @@ f06.uci.har.main <br>
 
 The functions can be described as follows.
 
-f01.read.merge.datasets<br> 
+**f01.read.merge.datasets**<br> 
 	Merges the files (X_train.txt and X_test.txt, y_train.txt and y_test.txt, subject_train.txt and subject_test.txt)
 	Returns a list of the three merged data frames (x, y and subject)
 	
-f02.get.mean.std.data(parameter x)<br> 
+**f02.get.mean.std.data(parameter x)**<br> 
     Read the features.txt file and filter out only the columns with the mean and standard deviation for each measurement<br>
     Populate the column names<br>
 	Remove unwanted characters from the column names<br>
 
-f03.replace.activities(parameter y)<br>
+**f03.replace.activities(parameter y)**<br>
     Use descriptive activity names to name the activities in the dataset (y)
 
-f04.combine.all.data<br>
+**f04.combine.all.data**<br>
     Combine mean and std values (x), activities (y) and subjects into one data frame using cbind.
 
-f05.calculate.average<br>
+**f05.calculate.average**<br>
     Create a clean dataset with the average of each variable for each activity and each subject (using ddply) 
 
-f06.uci.har.main<br>
+**f06.uci.har.main**<br>
 	This function calls the above 5 functions in sequence.<br>
 	It then writes the clean tidy data into a txt file (using write.table)<br>
 
