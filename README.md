@@ -26,36 +26,36 @@ Script Description
 
 After loading the source file, the List function will display the following 6 functions
 
-f01.read.merge.datasets
-f02.get.mean.std.data 
-f03.replace.activities
-f04.combine.all.data  
-f05.calculate.average
-f06.uci.har.main
+f01.read.merge.datasets <br>
+f02.get.mean.std.data <br>
+f03.replace.activities <br>
+f04.combine.all.data <br> 
+f05.calculate.average <br>
+f06.uci.har.main <br>
 
 The functions can be described as follows.
 
-f01.read.merge.datasets 
+f01.read.merge.datasets<br> 
 	Merges the files (X_train.txt and X_test.txt, y_train.txt and y_test.txt, subject_train.txt and subject_test.txt)
 	Returns a list of the three merged data frames (x, y and subject)
 	
-f02.get.mean.std.data(parameter x) 
-    Read the features.txt file and filter out only the columns with the mean and standard deviation for each measurement
-    Populate the column names
-	Remove unwanted characters from the column names
+f02.get.mean.std.data(parameter x)<br> 
+    Read the features.txt file and filter out only the columns with the mean and standard deviation for each measurement<br>
+    Populate the column names<br>
+	Remove unwanted characters from the column names<br>
 
-f03.replace.activities(parameter y)
+f03.replace.activities(parameter y)<br>
     Use descriptive activity names to name the activities in the dataset (y)
 
-f04.combine.all.data
+f04.combine.all.data<br>
     Combine mean and std values (x), activities (y) and subjects into one data frame using cbind.
 
-f05.calculate.average
+f05.calculate.average<br>
     Create a clean dataset with the average of each variable for each activity and each subject (using ddply) 
 
-f06.uci.har.main
-	This function calls the above 5 functions in sequence.
-	It then writes the clean tidy data into a txt file (using write.table)
+f06.uci.har.main<br>
+	This function calls the above 5 functions in sequence.<br>
+	It then writes the clean tidy data into a txt file (using write.table)<br>
 
 Script Execution
 ================
@@ -67,7 +67,7 @@ f06.uci.har.main()
 Script Output
 =============
 
-During the execution of the script, a few messages will be displayed on the screen to notify the various stages of execution.
+During the execution of the script, a few messages will be displayed on the screen to notify the various stages of execution.<br>
 After execution the following output file will be created in the working directory.
 
 uci_har_clean_data.txt
